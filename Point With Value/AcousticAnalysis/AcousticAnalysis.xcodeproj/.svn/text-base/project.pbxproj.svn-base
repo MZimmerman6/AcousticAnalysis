@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4266F43E15A8BB6D009F4F30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4266F43D15A8BB6D009F4F30 /* UIKit.framework */; };
+		4266F44015A8BB6D009F4F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4266F43F15A8BB6D009F4F30 /* Foundation.framework */; };
+		4266F44215A8BB6D009F4F30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4266F44115A8BB6D009F4F30 /* CoreGraphics.framework */; };
+		4266F44815A8BB6D009F4F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4266F44615A8BB6D009F4F30 /* InfoPlist.strings */; };
+		4266F44A15A8BB6D009F4F30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F44915A8BB6D009F4F30 /* main.m */; };
+		4266F44E15A8BB6E009F4F30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F44D15A8BB6E009F4F30 /* AppDelegate.m */; };
+		4266F45115A8BB6E009F4F30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F45015A8BB6E009F4F30 /* ViewController.m */; };
+		4266F45415A8BB6E009F4F30 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4266F45215A8BB6E009F4F30 /* ViewController.xib */; };
+		4266F46815A8BD73009F4F30 /* DoubleFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F45E15A8BD73009F4F30 /* DoubleFunctions.m */; };
+		4266F46915A8BD73009F4F30 /* FloatFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F46015A8BD73009F4F30 /* FloatFunctions.m */; };
+		4266F46A15A8BD73009F4F30 /* IntFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F46215A8BD73009F4F30 /* IntFunctions.m */; };
+		4266F46B15A8BD73009F4F30 /* MatlabFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F46515A8BD73009F4F30 /* MatlabFunctions.m */; };
+		4266F46C15A8BD73009F4F30 /* SInt16Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F46715A8BD73009F4F30 /* SInt16Functions.m */; };
+		4266F47115A8BD87009F4F30 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F46E15A8BD87009F4F30 /* DrawView.m */; };
+		4266F47215A8BD87009F4F30 /* SpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F47015A8BD87009F4F30 /* SpectrumView.m */; };
+		4266F47815A8BD94009F4F30 /* AudioFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F47415A8BD93009F4F30 /* AudioFunctions.m */; };
+		4266F47915A8BD94009F4F30 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F47615A8BD93009F4F30 /* AudioOutput.m */; };
+		4266F47C15A8BDCD009F4F30 /* AudioInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F47B15A8BDCD009F4F30 /* AudioInput.m */; };
+		4266F47F15A8BEB9009F4F30 /* SimpleFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266F47E15A8BEB9009F4F30 /* SimpleFFT.m */; };
+		4266F48115A8C1D5009F4F30 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4266F48015A8C1D5009F4F30 /* AudioToolbox.framework */; };
+		4266F48315A8C285009F4F30 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4266F48215A8C284009F4F30 /* Accelerate.framework */; };
+		4266F48515A8C28A009F4F30 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4266F48415A8C28A009F4F30 /* QuartzCore.framework */; };
+		4271F7C215AA8E5A0047F8E6 /* PlotBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7C115AA8E5A0047F8E6 /* PlotBorder.png */; };
+		4271F7C415AA8E640047F8E6 /* portrait_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7C315AA8E640047F8E6 /* portrait_background.png */; };
+		4271F7C615AA8EA40047F8E6 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7C515AA8EA40047F8E6 /* stopButton.png */; };
+		4271F7C815AA8F310047F8E6 /* stopButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7C715AA8F310047F8E6 /* stopButton2.png */; };
+		4271F7CA15AA8FFF0047F8E6 /* recordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7C915AA8FFF0047F8E6 /* recordButton.png */; };
+		4271F7CC15AA919E0047F8E6 /* fullwaveBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7CB15AA919E0047F8E6 /* fullwaveBorder.png */; };
+		4271F7CE15AA94540047F8E6 /* specGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7CD15AA94540047F8E6 /* specGrid.png */; };
+		4271F7D015AA955A0047F8E6 /* audioGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7CF15AA955A0047F8E6 /* audioGrid.png */; };
+		4271F7D615AA99B20047F8E6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7D515AA99B20047F8E6 /* icon.png */; };
+		4271F7DA15AA9AB70047F8E6 /* fullGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 4271F7D915AA9AB70047F8E6 /* fullGrid.png */; };
+		429098E315A92D5F00DE920E /* RangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 429098E215A92D5F00DE920E /* RangeSlider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		429098EC15A92D6700DE920E /* bar-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 429098E415A92D6700DE920E /* bar-background.png */; };
+		429098EE15A92D6700DE920E /* bar-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 429098E615A92D6700DE920E /* bar-highlight.png */; };
+		429098F015A92D6700DE920E /* handle-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 429098E815A92D6700DE920E /* handle-hover.png */; };
+		429098F215A92D6700DE920E /* handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 429098EA15A92D6700DE920E /* handle.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4266F43915A8BB6D009F4F30 /* AcousticAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcousticAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4266F43D15A8BB6D009F4F30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4266F43F15A8BB6D009F4F30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4266F44115A8BB6D009F4F30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4266F44515A8BB6D009F4F30 /* AcousticAnalysis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AcousticAnalysis-Info.plist"; sourceTree = "<group>"; };
+		4266F44715A8BB6D009F4F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4266F44915A8BB6D009F4F30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4266F44B15A8BB6D009F4F30 /* AcousticAnalysis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AcousticAnalysis-Prefix.pch"; sourceTree = "<group>"; };
+		4266F44C15A8BB6D009F4F30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4266F44D15A8BB6E009F4F30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4266F44F15A8BB6E009F4F30 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4266F45015A8BB6E009F4F30 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4266F45315A8BB6E009F4F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		4266F45D15A8BD73009F4F30 /* DoubleFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleFunctions.h; sourceTree = "<group>"; };
+		4266F45E15A8BD73009F4F30 /* DoubleFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleFunctions.m; sourceTree = "<group>"; };
+		4266F45F15A8BD73009F4F30 /* FloatFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatFunctions.h; sourceTree = "<group>"; };
+		4266F46015A8BD73009F4F30 /* FloatFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatFunctions.m; sourceTree = "<group>"; };
+		4266F46115A8BD73009F4F30 /* IntFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntFunctions.h; sourceTree = "<group>"; };
+		4266F46215A8BD73009F4F30 /* IntFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntFunctions.m; sourceTree = "<group>"; };
+		4266F46315A8BD73009F4F30 /* MathFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFunctions.h; sourceTree = "<group>"; };
+		4266F46415A8BD73009F4F30 /* MatlabFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatlabFunctions.h; sourceTree = "<group>"; };
+		4266F46515A8BD73009F4F30 /* MatlabFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatlabFunctions.m; sourceTree = "<group>"; };
+		4266F46615A8BD73009F4F30 /* SInt16Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SInt16Functions.h; sourceTree = "<group>"; };
+		4266F46715A8BD73009F4F30 /* SInt16Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SInt16Functions.m; sourceTree = "<group>"; };
+		4266F46D15A8BD87009F4F30 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		4266F46E15A8BD87009F4F30 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		4266F46F15A8BD87009F4F30 /* SpectrumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpectrumView.h; sourceTree = "<group>"; };
+		4266F47015A8BD87009F4F30 /* SpectrumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpectrumView.m; sourceTree = "<group>"; };
+		4266F47315A8BD93009F4F30 /* AudioFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFunctions.h; sourceTree = "<group>"; };
+		4266F47415A8BD93009F4F30 /* AudioFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFunctions.m; sourceTree = "<group>"; };
+		4266F47515A8BD93009F4F30 /* AudioOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioOutput.h; sourceTree = "<group>"; };
+		4266F47615A8BD93009F4F30 /* AudioOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioOutput.m; sourceTree = "<group>"; };
+		4266F47715A8BD93009F4F30 /* AudioParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioParameters.h; sourceTree = "<group>"; };
+		4266F47A15A8BDCD009F4F30 /* AudioInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInput.h; sourceTree = "<group>"; };
+		4266F47B15A8BDCD009F4F30 /* AudioInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioInput.m; sourceTree = "<group>"; };
+		4266F47D15A8BEB9009F4F30 /* SimpleFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFFT.h; sourceTree = "<group>"; };
+		4266F47E15A8BEB9009F4F30 /* SimpleFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleFFT.m; sourceTree = "<group>"; };
+		4266F48015A8C1D5009F4F30 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4266F48215A8C284009F4F30 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4266F48415A8C28A009F4F30 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4271F7C115AA8E5A0047F8E6 /* PlotBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlotBorder.png; sourceTree = "<group>"; };
+		4271F7C315AA8E640047F8E6 /* portrait_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait_background.png; sourceTree = "<group>"; };
+		4271F7C515AA8EA40047F8E6 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
+		4271F7C715AA8F310047F8E6 /* stopButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton2.png; sourceTree = "<group>"; };
+		4271F7C915AA8FFF0047F8E6 /* recordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordButton.png; sourceTree = "<group>"; };
+		4271F7CB15AA919E0047F8E6 /* fullwaveBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullwaveBorder.png; sourceTree = "<group>"; };
+		4271F7CD15AA94540047F8E6 /* specGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = specGrid.png; sourceTree = "<group>"; };
+		4271F7CF15AA955A0047F8E6 /* audioGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audioGrid.png; sourceTree = "<group>"; };
+		4271F7D515AA99B20047F8E6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4271F7D915AA9AB70047F8E6 /* fullGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullGrid.png; sourceTree = "<group>"; };
+		429098E115A92D5F00DE920E /* RangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeSlider.h; sourceTree = "<group>"; };
+		429098E215A92D5F00DE920E /* RangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeSlider.m; sourceTree = "<group>"; };
+		429098E415A92D6700DE920E /* bar-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-background.png"; sourceTree = "<group>"; };
+		429098E615A92D6700DE920E /* bar-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-highlight.png"; sourceTree = "<group>"; };
+		429098E815A92D6700DE920E /* handle-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "handle-hover.png"; sourceTree = "<group>"; };
+		429098EA15A92D6700DE920E /* handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handle.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4266F43615A8BB6D009F4F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266F48515A8C28A009F4F30 /* QuartzCore.framework in Frameworks */,
+				4266F48315A8C285009F4F30 /* Accelerate.framework in Frameworks */,
+				4266F48115A8C1D5009F4F30 /* AudioToolbox.framework in Frameworks */,
+				4266F43E15A8BB6D009F4F30 /* UIKit.framework in Frameworks */,
+				4266F44015A8BB6D009F4F30 /* Foundation.framework in Frameworks */,
+				4266F44215A8BB6D009F4F30 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4266F42E15A8BB6D009F4F30 = {
+			isa = PBXGroup;
+			children = (
+				4271F7D515AA99B20047F8E6 /* icon.png */,
+				4266F44315A8BB6D009F4F30 /* AcousticAnalysis */,
+				4266F43C15A8BB6D009F4F30 /* Frameworks */,
+				4266F43A15A8BB6D009F4F30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4266F43A15A8BB6D009F4F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4266F43915A8BB6D009F4F30 /* AcousticAnalysis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4266F43C15A8BB6D009F4F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4266F48415A8C28A009F4F30 /* QuartzCore.framework */,
+				4266F48215A8C284009F4F30 /* Accelerate.framework */,
+				4266F48015A8C1D5009F4F30 /* AudioToolbox.framework */,
+				4266F43D15A8BB6D009F4F30 /* UIKit.framework */,
+				4266F43F15A8BB6D009F4F30 /* Foundation.framework */,
+				4266F44115A8BB6D009F4F30 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4266F44315A8BB6D009F4F30 /* AcousticAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				4271F7BD15AA8E390047F8E6 /* images */,
+				4266F48E15A91658009F4F30 /* Custom Objects */,
+				4266F45C15A8BD43009F4F30 /* Drawing */,
+				4266F45B15A8BD3B009F4F30 /* Audio */,
+				4266F45A15A8BD33009F4F30 /* Math Functions */,
+				4266F44C15A8BB6D009F4F30 /* AppDelegate.h */,
+				4266F44D15A8BB6E009F4F30 /* AppDelegate.m */,
+				4266F44F15A8BB6E009F4F30 /* ViewController.h */,
+				4266F45015A8BB6E009F4F30 /* ViewController.m */,
+				4266F45215A8BB6E009F4F30 /* ViewController.xib */,
+				4266F44415A8BB6D009F4F30 /* Supporting Files */,
+			);
+			path = AcousticAnalysis;
+			sourceTree = "<group>";
+		};
+		4266F44415A8BB6D009F4F30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4266F44515A8BB6D009F4F30 /* AcousticAnalysis-Info.plist */,
+				4266F44615A8BB6D009F4F30 /* InfoPlist.strings */,
+				4266F44915A8BB6D009F4F30 /* main.m */,
+				4266F44B15A8BB6D009F4F30 /* AcousticAnalysis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4266F45A15A8BD33009F4F30 /* Math Functions */ = {
+			isa = PBXGroup;
+			children = (
+				4266F45D15A8BD73009F4F30 /* DoubleFunctions.h */,
+				4266F45E15A8BD73009F4F30 /* DoubleFunctions.m */,
+				4266F45F15A8BD73009F4F30 /* FloatFunctions.h */,
+				4266F46015A8BD73009F4F30 /* FloatFunctions.m */,
+				4266F46115A8BD73009F4F30 /* IntFunctions.h */,
+				4266F46215A8BD73009F4F30 /* IntFunctions.m */,
+				4266F46315A8BD73009F4F30 /* MathFunctions.h */,
+				4266F46415A8BD73009F4F30 /* MatlabFunctions.h */,
+				4266F46515A8BD73009F4F30 /* MatlabFunctions.m */,
+				4266F46615A8BD73009F4F30 /* SInt16Functions.h */,
+				4266F46715A8BD73009F4F30 /* SInt16Functions.m */,
+			);
+			name = "Math Functions";
+			sourceTree = "<group>";
+		};
+		4266F45B15A8BD3B009F4F30 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4266F47D15A8BEB9009F4F30 /* SimpleFFT.h */,
+				4266F47E15A8BEB9009F4F30 /* SimpleFFT.m */,
+				4266F47A15A8BDCD009F4F30 /* AudioInput.h */,
+				4266F47B15A8BDCD009F4F30 /* AudioInput.m */,
+				4266F47315A8BD93009F4F30 /* AudioFunctions.h */,
+				4266F47415A8BD93009F4F30 /* AudioFunctions.m */,
+				4266F47515A8BD93009F4F30 /* AudioOutput.h */,
+				4266F47615A8BD93009F4F30 /* AudioOutput.m */,
+				4266F47715A8BD93009F4F30 /* AudioParameters.h */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		4266F45C15A8BD43009F4F30 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				4266F46D15A8BD87009F4F30 /* DrawView.h */,
+				4266F46E15A8BD87009F4F30 /* DrawView.m */,
+				4266F46F15A8BD87009F4F30 /* SpectrumView.h */,
+				4266F47015A8BD87009F4F30 /* SpectrumView.m */,
+			);
+			name = Drawing;
+			sourceTree = "<group>";
+		};
+		4266F48E15A91658009F4F30 /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				429098E415A92D6700DE920E /* bar-background.png */,
+				429098E615A92D6700DE920E /* bar-highlight.png */,
+				429098E815A92D6700DE920E /* handle-hover.png */,
+				429098EA15A92D6700DE920E /* handle.png */,
+				429098E115A92D5F00DE920E /* RangeSlider.h */,
+				429098E215A92D5F00DE920E /* RangeSlider.m */,
+			);
+			name = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		4271F7BD15AA8E390047F8E6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4271F7D915AA9AB70047F8E6 /* fullGrid.png */,
+				4271F7CF15AA955A0047F8E6 /* audioGrid.png */,
+				4271F7CD15AA94540047F8E6 /* specGrid.png */,
+				4271F7CB15AA919E0047F8E6 /* fullwaveBorder.png */,
+				4271F7C915AA8FFF0047F8E6 /* recordButton.png */,
+				4271F7C715AA8F310047F8E6 /* stopButton2.png */,
+				4271F7C515AA8EA40047F8E6 /* stopButton.png */,
+				4271F7C315AA8E640047F8E6 /* portrait_background.png */,
+				4271F7C115AA8E5A0047F8E6 /* PlotBorder.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4266F43815A8BB6D009F4F30 /* AcousticAnalysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4266F45715A8BB6E009F4F30 /* Build configuration list for PBXNativeTarget "AcousticAnalysis" */;
+			buildPhases = (
+				4266F43515A8BB6D009F4F30 /* Sources */,
+				4266F43615A8BB6D009F4F30 /* Frameworks */,
+				4266F43715A8BB6D009F4F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AcousticAnalysis;
+			productName = AcousticAnalysis;
+			productReference = 4266F43915A8BB6D009F4F30 /* AcousticAnalysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4266F43015A8BB6D009F4F30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 4266F43315A8BB6D009F4F30 /* Build configuration list for PBXProject "AcousticAnalysis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4266F42E15A8BB6D009F4F30;
+			productRefGroup = 4266F43A15A8BB6D009F4F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4266F43815A8BB6D009F4F30 /* AcousticAnalysis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4266F43715A8BB6D009F4F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266F44815A8BB6D009F4F30 /* InfoPlist.strings in Resources */,
+				4266F45415A8BB6E009F4F30 /* ViewController.xib in Resources */,
+				429098EC15A92D6700DE920E /* bar-background.png in Resources */,
+				429098EE15A92D6700DE920E /* bar-highlight.png in Resources */,
+				429098F015A92D6700DE920E /* handle-hover.png in Resources */,
+				429098F215A92D6700DE920E /* handle.png in Resources */,
+				4271F7C215AA8E5A0047F8E6 /* PlotBorder.png in Resources */,
+				4271F7C415AA8E640047F8E6 /* portrait_background.png in Resources */,
+				4271F7C615AA8EA40047F8E6 /* stopButton.png in Resources */,
+				4271F7C815AA8F310047F8E6 /* stopButton2.png in Resources */,
+				4271F7CA15AA8FFF0047F8E6 /* recordButton.png in Resources */,
+				4271F7CC15AA919E0047F8E6 /* fullwaveBorder.png in Resources */,
+				4271F7CE15AA94540047F8E6 /* specGrid.png in Resources */,
+				4271F7D015AA955A0047F8E6 /* audioGrid.png in Resources */,
+				4271F7D615AA99B20047F8E6 /* icon.png in Resources */,
+				4271F7DA15AA9AB70047F8E6 /* fullGrid.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4266F43515A8BB6D009F4F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4266F44A15A8BB6D009F4F30 /* main.m in Sources */,
+				4266F44E15A8BB6E009F4F30 /* AppDelegate.m in Sources */,
+				4266F45115A8BB6E009F4F30 /* ViewController.m in Sources */,
+				4266F46815A8BD73009F4F30 /* DoubleFunctions.m in Sources */,
+				4266F46915A8BD73009F4F30 /* FloatFunctions.m in Sources */,
+				4266F46A15A8BD73009F4F30 /* IntFunctions.m in Sources */,
+				4266F46B15A8BD73009F4F30 /* MatlabFunctions.m in Sources */,
+				4266F46C15A8BD73009F4F30 /* SInt16Functions.m in Sources */,
+				4266F47115A8BD87009F4F30 /* DrawView.m in Sources */,
+				4266F47215A8BD87009F4F30 /* SpectrumView.m in Sources */,
+				4266F47815A8BD94009F4F30 /* AudioFunctions.m in Sources */,
+				4266F47915A8BD94009F4F30 /* AudioOutput.m in Sources */,
+				4266F47C15A8BDCD009F4F30 /* AudioInput.m in Sources */,
+				4266F47F15A8BEB9009F4F30 /* SimpleFFT.m in Sources */,
+				429098E315A92D5F00DE920E /* RangeSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4266F44615A8BB6D009F4F30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4266F44715A8BB6D009F4F30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4266F45215A8BB6E009F4F30 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4266F45315A8BB6E009F4F30 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4266F45515A8BB6E009F4F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4266F45615A8BB6E009F4F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4266F45815A8BB6E009F4F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AcousticAnalysis/AcousticAnalysis-Prefix.pch";
+				INFOPLIST_FILE = "AcousticAnalysis/AcousticAnalysis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4266F45915A8BB6E009F4F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AcousticAnalysis/AcousticAnalysis-Prefix.pch";
+				INFOPLIST_FILE = "AcousticAnalysis/AcousticAnalysis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4266F43315A8BB6D009F4F30 /* Build configuration list for PBXProject "AcousticAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4266F45515A8BB6E009F4F30 /* Debug */,
+				4266F45615A8BB6E009F4F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4266F45715A8BB6E009F4F30 /* Build configuration list for PBXNativeTarget "AcousticAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4266F45815A8BB6E009F4F30 /* Debug */,
+				4266F45915A8BB6E009F4F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4266F43015A8BB6D009F4F30 /* Project object */;
+}
